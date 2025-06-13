@@ -1,12 +1,36 @@
-i have created separate json's for layouts and widgets.
+ **Widgets & Layout Extraction Instructions**
 
-run command -
-node widgets.js - this will automatically filter the json separately for layouts and the widgets using default input.json file and it will create two file layout.filter and widget.filter.
+Separate JSON Files for Layouts and Widgets
+I have created separate JSON files for layouts and widgets.
 
-all the wix computed styles available on computed.json file.
+Run the Widgets Script
+Use the following command to automatically process and separate the JSON data:
 
-all the wix raw html available on maindummy.html
+bash
+node widgets.js
 
-please do not run the clean-computed-styles.js file.
+This script uses the default input.json file.
 
-if you run the widgets.js file that will create two files one is for layout and another is for widgets you can easily identify.
+It filters the data into two separate files:
+
+layout.filter.json – contains only layout elements.
+
+widget.filter.json – contains only widget elements.
+
+Available Supporting Files
+
+All Wix computed styles are available in the computed.json file. - 
+
+All Wix raw HTML is stored in the maindummy.html file.
+
+Important Note
+⚠️ Do not run the clean-computed-styles.js file.
+
+It is not required and may interfere with the separation process.
+
+File Output
+After running widgets.js, you will get two clearly identifiable files:
+
+One for layouts (layout.filter.json)
+
+One for widgets (widget.filter.json)
